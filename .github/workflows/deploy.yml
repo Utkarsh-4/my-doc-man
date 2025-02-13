@@ -19,7 +19,8 @@ jobs:
         with:
           node-version: 18
           cache: yarn
-
+      - name: Run Super-Linter
+        uses: github/super-linter@v4        
       - name: Install dependencies
         run: yarn install --frozen-lockfile
       - name: Build website
